@@ -1,0 +1,17 @@
+@mixin flexCenter($type:flex, $main-axis:center, $cross-axis:center) {
+    display: $type;
+    justify-content: $main-axis;
+    align-items: $cross-axis;
+}
+
+%section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+%bodyPrimaryfont {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    background-color: var(--main-back-color);
+    color: var(--main-text-color);
+}

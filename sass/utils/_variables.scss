@@ -1,0 +1,23 @@
+:root {
+    --main-back-color: #FFFFFF;
+    --main-text-color: #757575;
+    --title-text-color: #212121;
+    --button-text-color: #212121;
+    --button-hover-color: #2196F3;
+    --top-logo-color-left: #2196F3;
+    --top-logo-color-right: #000000;
+    --bottomlogo-color-left: #2196F3;
+    --bottomlogo-color-right: #FFFFFF;
+    --footer-address-color: #FFFFFF;
+    --address-data-color: rgba(255, 255, 255, 0.6);
+    --block-one-bkc: #2F303A;
+    --button-hover-background: #188CE8;
+    --duration: cubic-bezier(0.4, 0, 0.2, 1);
+    --speed: 250ms;
+}
+
+$fontPrimary: Roboto,
+sans-serif;
+$fontLogo: Raleway,
+sans-serif;
+

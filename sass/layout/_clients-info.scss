@@ -1,0 +1,67 @@
+.container {
+    .our-clients {
+        display: block;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+.clients {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.clients__logo {
+    /*display: block;
+    flex-basis: calc((100% - 150px)/6);
+    border: none;*/
+    border: none;
+    flex-basis: calc((100% - 30px)/2);
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 60px)/3);
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 150px)/6);
+    }
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    /*padding: 15px 30px;*/
+    @media screen and (min-width: 1200px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    color: #AFB1B8;
+    cursor: pointer;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    transition: color var(--speed) var(--duration),
+    fill var(--speed) var(--duration),
+    border var(--speed) var(--duration);
+        &:hover,
+        &:focus {
+            color: #2196F3;
+            fill: #2196F3;
+            border: 1px solid #2196F3;}
+    }
+
+.clients__logo--item {
+    fill: currentColor;
+    border: none;
+    padding: 0;
+    margin: 0;
+        &:hover,
+        &:focus {
+            fill: #2196F3;}
+    }
