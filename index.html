@@ -18,7 +18,7 @@
 </head>
 
 <!--ВЕРХНЯЯ ЛИНИЯ-->
-<body class="body">
+<body class="body page">
 <header class="header">
     <div class="header__container container">
     <a class="logo logo--header" href="./index.html">
@@ -146,25 +146,20 @@
                     <h2 class="title">Чем мы занимаемся</h2>
                         <ul class="pictures__list list">
                             <li class="pictures__boxes">
-                                <img srcset="./image/services/service-01-desktop-370.jpg 1x,
-                                    ./image/services/service-01-desktop-@2x-740.jpg 2x"
-                                    src="./image/services/service-01-desktop-370.jpg" alt="box1" width="370">
+                                <img 
+                                src="./image/services/service-01-desktop-370.jpeg" alt="box1" width="370">
                                 <h3 class="pictures__names">
                                     Десктопные приложения
                                 </h3>
                             </li>
                             <li class="pictures__boxes">
-                                <img srcset="./image/services/service-02-desktop-370.jpg 1x,
-                                                                                ./image/services/service-02-desktop-@2x-740.jpg 2x"
-                                    src="./image/services/service-02-desktop-370.jpg" alt="box2" width="370">
+                                <img src="./image/services/service-02-desktop-370.jpeg" alt="box2" width="370">
                                 <h3 class="pictures__names">
                                     Мобильные приложения
                                 </h3>
                             </li>
                             <li class="pictures__boxes">
-                                <img srcset="./image/services/service-03-desktop-370.jpg 1x,
-                                                                                ./image/services/service-03-desktop-@2x-740.jpg 2x"
-                                    src="./image/services/service-03-desktop-370.jpg" alt="box3" width="370">
+                                <img src="./image/services/service-03-desktop-370.jpeg" alt="box3" width="370">
                                 <h3 class="pictures__names">
                                     Дизайнерские решения
                                 </h3>
@@ -581,16 +576,18 @@
                             placeholder="Введите текст"></textarea>
                     </div>
                 </form>
-                <form class="checkbox-form">
-                    <div class="checkbox-modal">
-                        <label class="checkbox-label">
-                            <input class="checkbox" type="checkbox" name="policy" value="agreed">
-                            <span class="checkbox-icon"></span>
-                            Соглашаюсь с рассылкой и принимаю 
-                            <a class="policy-link" href="./index.html">Условия договора</a>
-                        </label>
-                    </div>
-                </form>
+                <div class="checkbox__field">
+                    <label class="checkbox__label">
+                        <input class="checkbox" type="checkbox" name="policy" value="agreed">
+                            <span class="checkbox__icon">
+        
+                            </span>
+                            <span class="checkbox__text">
+                                Соглашаюсь с рассылкой и принимаю
+                                <a class="checkbox__link" href="./index.html">Условия договора</a>
+                            </span>
+                    </label>
+                </div>
                     <button class="modal-btn" type="submit">Отправить</button>
             </div>
         </div>
