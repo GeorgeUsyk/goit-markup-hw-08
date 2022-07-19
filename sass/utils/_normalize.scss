@@ -74,10 +74,10 @@ nav {
 .title {
     font-weight: 700;
     font-size: 28px;
-    line-height: 28/32.81;
+    line-height: 0.85;
     @media screen and (min-width: 1200px) {
-        font-size: 36;
-        line-height: 36/42.19;
+        font-size: 36px;
+        line-height: 0.85;
     }
 
     text-align: center;

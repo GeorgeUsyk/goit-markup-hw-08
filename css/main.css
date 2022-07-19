@@ -98,7 +98,7 @@ nav {
 .title {
   font-weight: 700;
   font-size: 28px;
-  line-height: 28/32.81;
+  line-height: 0.85;
   text-align: center;
   color: var(--title-text-color);
   margin: 0 auto;
@@ -108,8 +108,8 @@ nav {
 }
 @media screen and (min-width: 1200px) {
   .title {
-    font-size: 36;
-    line-height: 36/42.19;
+    font-size: 36px;
+    line-height: 0.85;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -218,7 +218,7 @@ nav {
 .button:hover, .button:focus {
   color: var(--bottomlogo-color-right);
   background-color: var(--top-logo-color-left);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button--active {
@@ -648,13 +648,19 @@ nav {
   background-color: var(--block-one-bkc);
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-bottom: 118px;
+  padding-top: 118px;
   max-width: 1600px;
   background-position: center;
   margin: 0 auto;
   background-size: cover;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/back/hero-mobile-480.jpeg);
+}
+@media screen and (min-widhh: 1200px) {
+  .hero {
+    padding-bottom: 200px;
+    padding-top: 200px;
+  }
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -1578,7 +1584,7 @@ nav {
 .checkbox:checked + .checkbox__icon {
   border-color: #2196F3;
   background-color: #2196F3;
-  background-image: url(../../image/check.svg);
+  background-image: url(../image/check.svg);
   background-size: contain;
   background-origin: border-box;
 }
